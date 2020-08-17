@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "UBS Wealth Management Singapore",
+    "projectDescription": "Order Management Services, Topaz: Core application that connects to variuos brokers for execution of orders",
+    "RnR":"Technical SPOC in trading floor for any application and functional related issues and Queries. \n\n Coordinate with Business and Development team for various change requests. \n\n Provide and suggests work arounds in case of any bottleneck during order placement. \n\n Troubleshoot with many Broker side IT representatives in case of any downstream technical issues. \n\n Automation of daily repetitive tasks that can be automated for business users as well as for Technical support team. \n",
+
+    "type": "App Support",
+    "date": "Jul 2016 - Till Date",
+    "skills": "Unix, Shell Scripting, Autosys, Fix Protocol, SQL, PLSQL, Toad, Service Now, Java, Reflection Suite, Splunk, AppDynamics, Citrix.",
+    "preview": "../assets/images/ubs_logo.svg"
+  },
+  {
+    "id": 2,
+    "name": "UBS Investment Bank Singapore",
+    "projectDescription": "Equities Order Management Services, Sapphire: Sales and Execution trading platform for Equities in APAC.It integrates together a slew of applications dealing with algorithmic trading ,portfolio trading, DMA, DSA, middle-office, Settlement etc.",
+    "RnR":"Manage connectivity and communication between various applications. \n\n Coordinate with Business users, Client manager, QA team and Development team. \n\n Worked on UNIX for setting up production and UAT environments from the scratch for various environments including database management and connectivity with upstream and downstream systems. \n\n Generate reports as per Trader requirements using SQL queries. \n\n Execute releases in production and UAT environments on Linux/Unix servers. \n\n Third party coordination (SGX test exchange, HK test exchange etc) and scheduling of work to meet planned timelines, technical specifications and regulatory compliance",
+
+    "type": "App Support",
+    "date": "Nov 2011 – Jul 2016",
+    "skills": "Unix, Shell Scripting, Autosys, Fix Protocol, SQL, PLSQL, Toad, Service Now, Java, Clarion",
+    "preview": "../assets/images/ubs_logo.svg"
+  },
+  {
+    "id": 3,
+    "name": "Deutsche Bank AG",
+    "projectDescription": "Dbexchange Team ensures the maintainance and functioning of the Deutsche bank's middleware system.The system uses various protocols for the file transfer like AS2, SSH , SSL.",
+    "RnR":"Coordinate with Various IT Teams to onboard new users and provide Technical solutions. \n\n Respond to the issues assigned, analyze, suggest/implement workaround, communicate to all the stakeholders and close issues as per the agreed timeline in order to ensure support availability as per agreed SLA. \n\n Maintain, troubleshoot and deploy patches for the applications \n\n Understand the business processes, information flow and find solutions for problems. \n\n Proactive monitoring in Autosys and defining JILs for Autosys jobs. \n\n Incident management and resolution.",
+
+    "type": "App Support",
+    "date": "Sep 2007 – Oct 2011",
+    "skills": "Unix, Autosys, SSH, FTP, SSL, AS2, SQL, Toad, JAVA",
+    "preview": "../assets/images/deutsche.svg"
+  },
+
+  {
+    "id": 4,
+    "name": "UBS Wealth Management Singapore",
+    "projectDescription":"Designed and developed automation for cross trading desk change. when an equity traders requires to trade on Funds and Fixed income traders needs to trade on Equities there was requirement to change software configuration aligned to respective desk.This use to take a half day manual work,Using this tool it can be achived in less then 30 minutes  \n\n Technology Used:  Core Java",
+    "type": "Dev Projects",
+    "date": "Sep 2007 – Oct 2011",
+    "preview": "../assets/images/ubs_logo.svg"
+  },
+  {
+    "id": 5,
+    "name": "UBS Investment Bank Singapore",
+    "projectDescription":"Designed and developed bots to handle user queries and provide solutions automatically. \n\nIt handles at least 30- 35 % of daily queries hence reducing human intervention and manual work.\n\n Technology Used:  UNIX shell scripting",
+    "type": "Dev Projects",
+    "date": "Sep 2007 – Oct 2011",
+    "preview": "../assets/images/ubs_logo.svg"
+  },
+  {
+    "id": 6,
+    "name": "Deutsche Bank AG",
+    "projectDescription":"Designed and developed automation of weekly and monthly business report, saving hours of manual work. \n\nTechnology Used: Core JAVA and Oracle (11G)  as database.",
+    "type": "Dev Projects",
+    "preview": "../assets/images/deutsche.svg"
+  },
+  {
+    "id": 7,
+    "name": "BBSchool",
+    "projectDescription":"Fully responsive site with mobile first approach for the school.Users can download Prospectus and submit queries to school management. It has an image gallery of school representing various events and Online Fees informations. Management can publish dynamic information and announcement to the users.\n\nTechnology Used: Angular, Typescript, Sass, Bootstrap, MongoDB Atlas as database.",
+    "type": "Dev Projects",
+    "preview": "../assets/images/bbs.png"
+  }
+
+]

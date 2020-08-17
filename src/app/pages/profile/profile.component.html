@@ -1,0 +1,58 @@
+<mat-card class="_matRadio">
+
+    <mat-radio-group class="row" [(ngModel)]="selectedType">
+
+        <mat-radio-button class="col-12" class="mx-2" value="All">All</mat-radio-button>
+        <mat-radio-button class="col-12" *ngFor="let type of types" class="mx-2" [value]="type">{{type}}
+        </mat-radio-button>
+
+    </mat-radio-group>
+
+</mat-card>
+
+<mat-card @items *ngFor="let item of profiles" class="mt-1">
+    <!-- <mat-card-header >
+        <mat-card-title >{{item.type}}</mat-card-title>
+        <mat-card-subtitle>{{item.name}}</mat-card-subtitle>
+    </mat-card-header> -->
+    <!-- <div *ngIf="item === "> -->
+    <mat-card-content *ngIf="item.type === 'App Support' ">
+        <div class="mt-2 _mtype">
+            <img mat-card-image class="mr-2" [src]="item.preview"> {{item.name}}
+        </div>
+        <div class="mt-2 _mtype">
+            {{item.date}}
+        </div>
+        <div class="mt-2" style="white-space:pre-line; margin-left: 0px;">
+            <b>Project Description: </b>{{item.projectDescription}}
+            <!-- {{testStr}} -->
+        </div>
+        <div class="mt-2" style="white-space:pre-line; margin-left: 0px;">
+            <b>Roles & Responsibiities: </b>{{item.RnR}}
+            <!-- {{testStr}} -->
+        </div>
+
+        <div class="mt-2" style="white-space:pre-line; margin-left: 0px;">
+            <b>Skills needed for support: </b>{{item.skills}}
+            <!-- {{testStr}} -->
+        </div>
+
+    </mat-card-content>
+
+
+    <!-- If the JSON contains Dev Projects -->
+    <mat-card-content *ngIf="item.type === 'Dev Projects' ">
+        <div class="mt-2 _mtype">
+            <img mat-card-image class="mr-2" [src]="item.preview"> {{item.name}}
+        </div>
+       
+        <div class="mt-2" style="white-space:pre-line; margin-left: 0px;">
+            <b>Project Description: </b>{{item.projectDescription}}
+        </div>
+     
+    </mat-card-content>
+
+
+    <!-- </div> -->
+
+</mat-card>

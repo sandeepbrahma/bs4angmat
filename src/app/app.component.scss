@@ -1,0 +1,150 @@
+
+.small_nav{
+  display: block;
+}
+
+._router {
+  flex: auto;
+}
+
+// HEADER
+._nav {
+  border-bottom: 2px solid rgb(25, 19, 59);
+}
+
+._links {
+  margin: 0.7rem;
+}
+._home {
+  width: 7rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1.5px solid rgb(173, 0, 0);
+  border-radius: 30px;
+  // margin: 0.5rem 0.5rem;
+}
+
+._home_c {
+  width: 25rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  // margin: 0.5rem 0.5rem;
+}
+
+._profile {
+  width: 7rem;
+  text-align: center;
+
+  text-decoration: none;
+  // padding: .2rem;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  // margin: 0.5rem 0.5rem;
+}
+._profile_c {
+  width: 25rem;
+  text-align: center;
+
+  text-decoration: none;
+  // padding: .2rem;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  // margin: 0.5rem 0.5rem;
+}
+
+._contact {
+  width: 7rem;
+  text-align: center;
+
+  text-decoration: none;
+  // padding: .2rem;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  // margin: 0.5rem 0.5rem;
+}
+._contact_c {
+  width: 25rem;
+  text-align: center;
+
+  text-decoration: none;
+  // padding: .2rem;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  // margin: 0.5rem 0.5rem;
+}
+._home_mob {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  // padding: 0.5rem;
+  // border: 1.5px solid black;
+  border-radius: 15px;
+  // margin: 0.5rem 0.5rem;
+}
+
+._profile_mob {
+  width: 100%;
+  text-align: center;
+
+  text-decoration: none;
+  // padding: .2rem;
+  // border: 1.5px solid black;
+  border-radius: 15px;
+  // margin: 0.5rem 0.5rem;
+}
+
+._contact_mob {
+  width: 100%;
+  text-align: center;
+
+  text-decoration: none;
+  // padding: .2rem;
+  // border: 1.5px solid black;
+  border-radius: 15px;
+  // margin: 0.5rem 0.5rem;
+}
+
+.devAvatar {
+  margin-top: 1rem;
+  max-height: 23rem;
+  max-width: 19rem;
+  // background-color: rgb(99, 20, 173);
+}
+
+.whenClicked {
+  color: white !important;
+  background-color: rgb(42, 24, 59);
+  transition-duration: 0.75s;
+  // transition: ease-out;
+}
+.whenOutOfClick {
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+  .sometext {
+    text-align: center;
+    // justify-content: center;
+
+    // align-items: center;
+    // align-content: center;
+  }
+  .somemedia {
+    text-align: center;
+  }
+}
+
+// SVG
+
+#nodesvg:hover {
+  cursor: pointer;
+}
+
+.icon_faCofee{
+  color: rgb(63, 34, 97);
+}
+

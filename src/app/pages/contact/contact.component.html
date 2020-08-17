@@ -1,0 +1,36 @@
+<div class="container row" style="margin: 0px;padding: 0px;">
+    <mat-card class="col-12">
+
+        <mat-card-content>
+            Contact Information
+            <address>
+                <div style="margin-top: 10px">
+                    <strong>sandeep brahma</strong>
+                    <p style="margin: 0px">Location: Singapore</p>
+                    <strong>Email: </strong>
+
+                    <a class="accent" href="mailto:contact@sbrahma.com">contact@sbrahma.com</a>
+                    <br><br>
+
+                    You can either send me e-mail using above mail-id or just fill the below form and send.
+                </div>
+            </address>
+        </mat-card-content>
+    </mat-card>
+
+    <div class="col-12 " style="margin-left: 0px; margin-top: 30px; padding: 0px">
+        <form ngNoForm action="https://formspree.io/address@sa.brahmas@gmail.com" method='POST'>
+            <mat-form-field class="full-width mb-4">
+                <input matInput type="email" placeholder="your email" name="_replyto" required>
+            </mat-form-field>
+            <mat-form-field class="full-width mb-4">
+                <input matInput placeholder="subject" name="subject">
+            </mat-form-field>
+            <mat-form-field class="full-width ">
+                <textarea matInput placeholder="Message" name="message" required></textarea>
+            </mat-form-field>
+
+            <button mat-stroked-button class="bg-primary" style="color: white" type="submit">send message</button>
+        </form>
+    </div>
+</div>
