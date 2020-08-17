@@ -6,7 +6,7 @@
 //   production: false
 // };
 export const environment = {
-  production: false,
+  production: true,
   apiUrl: '../assets/profiles/profile.json'
 };
 
