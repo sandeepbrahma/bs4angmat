@@ -25,19 +25,34 @@ export class AppComponent implements OnInit {
   statusProfile: boolean = false;
 
   statusContact: boolean = false;
-  faCoffee = faFacebook;
-  faIdCard = faLinkedin;
-  faGraduationCap = faInstagram;
+  faFacebook = faFacebook;
+  faLinkedin = faLinkedin;
+  faInstagram = faInstagram;
+  faHome = faHome;
   public isMenuCollapsed = true;
   isCollapsed = true;
 
   ngOnInit(): void {
-    gsap.timeline()
-      .from("#main-avatar", { duration: .85, opacity: 0, scale: 0, y: 8 })
-      .from("#g1458", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
-      .from("#g1470", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
-      .from("#g1489", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
-      .from("#g1429", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
+    try {
+      gsap.timeline()
+        // .from("#main-avatar", { duration: .85, opacity: 0, scale: 0, y: 8 })
+        
+        .from("#g1447", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
+        .from("#g1458", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
+        .from("#g2702", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
+        .from("#g1470", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
+        .from("#g1489", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
+        .from("#g1429", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
+
+
+
+
+
+        
+    } catch (error) {
+      console.log(error);
+    }
+
     // .from("#para1", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
     // .from("#para2", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
     // .from("#para3", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })

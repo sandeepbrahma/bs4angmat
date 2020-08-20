@@ -1,5 +1,4 @@
-
-.small_nav{
+.small_nav {
   display: block;
 }
 
@@ -110,8 +109,8 @@
 
 .devAvatar {
   margin-top: 1rem;
-  max-height: 23rem;
-  max-width: 19rem;
+  max-height: 25rem;
+  max-width: 20rem;
   // background-color: rgb(99, 20, 173);
 }
 
@@ -133,18 +132,36 @@
     // align-items: center;
     // align-content: center;
   }
-  .somemedia {
-    text-align: center;
-  }
 }
 
+@media (max-width:990px) and (min-width:766px) {
+  .smallsize {
+    margin-top: 1rem;
+    max-height: 25rem;
+    max-width: 16rem;
+   background-color: rgb(99, 20, 173);  }
+}​
+
+
+.somemedia {
+  text-align: center;
+}
+
+.icon_linkedin {
+  color: rgb(81, 64, 156);
+
+}
 // SVG
 
 #nodesvg:hover {
   cursor: pointer;
 }
 
-.icon_faCofee{
+.icon_faCofee {
   color: rgb(63, 34, 97);
 }
 
+.icon_instagram{
+  color: rgb(90, 43, 16);
+
+}
