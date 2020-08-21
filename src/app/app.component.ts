@@ -6,6 +6,8 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Router, NavigationStart, NavigationEnd } from '@angular/router';
+
 
 
 
@@ -23,7 +25,6 @@ export class AppComponent implements OnInit {
   title = 'bs4angmat';
   statusHome: boolean = true;
   statusProfile: boolean = false;
-
   statusContact: boolean = false;
   faFacebook = faFacebook;
   faLinkedin = faLinkedin;
@@ -31,12 +32,22 @@ export class AppComponent implements OnInit {
   faHome = faHome;
   public isMenuCollapsed = true;
   isCollapsed = true;
+  public href: string = "";
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    // ?need to understand//
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        console.log("onInit():: " + event.urlAfterRedirects);
+        this.routerChangeMethod(event.urlAfterRedirects);
+      }
+    })
+
     try {
       gsap.timeline()
         // .from("#main-avatar", { duration: .85, opacity: 0, scale: 0, y: 8 })
-        
+
         .from("#g1447", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
         .from("#g1458", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
         .from("#g2702", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
@@ -48,7 +59,7 @@ export class AppComponent implements OnInit {
 
 
 
-        
+
     } catch (error) {
       console.log(error);
     }
@@ -60,6 +71,26 @@ export class AppComponent implements OnInit {
 
 
   }
+  routerChangeMethod(url) {
+    switch (url) {
+      case "/": {
+        this.clickEventHome();
+        break;
+      }
+      case "/profile": {
+        this.clickEventProfile();
+        break;
+      }
+      case "/contact": {
+        this.clickEventContact();
+        break;
+      }
+      default: {
+        break;
+      }
+    }
+  }
+
 
   clickEventHome() {
     this.statusHome = true;

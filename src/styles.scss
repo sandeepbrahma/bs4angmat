@@ -33,11 +33,13 @@ $bs4angmat-theme: mat-light-theme($bs4angmat-primary, $bs4angmat-accent, $bs4ang
 html,
 body {
   margin: 0;
-  padding: 0;
-//   background-color: rgb(32, 18, 46);
+  padding: 1px;
+  // background-color: rgb(32, 18, 46);
   height: 100%;
-//   font-family: 'Dancing Script', cursive;
-  font-family: 'Montserrat', sans-serif;
+  // box-sizing: border-box;
+
+  //   font-family: 'Dancing Script', cursive;
+  font-family: "Montserrat", sans-serif;
 }
 // font-family: "Montserrat", "Roboto", "Helvetica Neue", sans-serif;
 // font-family: 'Dancing Script', cursive;

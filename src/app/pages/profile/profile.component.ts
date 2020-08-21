@@ -68,8 +68,8 @@ export class ProfileComponent implements OnInit {
 
 
       this.profiles = data.filter(p => {
-        console.log("p.type === _selectedType", p.type === _selectedType);
-        console.log("_selectedType === 'All'", _selectedType === 'All');
+        // console.log("p.type === _selectedType", p.type === _selectedType);
+        // console.log("_selectedType === 'All'", _selectedType === 'All');
         return p.type === _selectedType || _selectedType === 'All'
       }
       );

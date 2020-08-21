@@ -8,7 +8,7 @@
 
 // HEADER
 ._nav {
-  border-bottom: 2px solid rgb(25, 19, 59);
+  border-bottom: 2px solid rgb(69, 28, 82);
 }
 
 ._links {
@@ -19,8 +19,9 @@
   text-align: center;
   text-decoration: none;
   padding: 0.5rem;
-  border: 1.5px solid rgb(173, 0, 0);
+  border: 1.5px solid rgb(69, 28, 82);
   border-radius: 30px;
+  color: rgb(69, 28, 82);
   // margin: 0.5rem 0.5rem;
 }
 
@@ -29,7 +30,8 @@
   text-align: center;
   text-decoration: none;
   padding: 0.5rem;
-  border: 1.5px solid black;
+  border: 1.5px solid rgb(69, 28, 82);
+  color: rgb(69, 28, 82);
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
 }
@@ -40,17 +42,20 @@
 
   text-decoration: none;
   // padding: .2rem;
-  border: 1.5px solid black;
+  border: 1.5px solid rgb(69, 28, 82);
+  color: rgb(69, 28, 82);
+
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
 }
 ._profile_c {
   width: 25rem;
   text-align: center;
+  color: rgb(69, 28, 82);
 
   text-decoration: none;
   // padding: .2rem;
-  border: 1.5px solid black;
+  border: 1.5px solid rgb(69, 28, 82);
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
 }
@@ -58,20 +63,22 @@
 ._contact {
   width: 7rem;
   text-align: center;
+  color: rgb(69, 28, 82);
 
   text-decoration: none;
   // padding: .2rem;
-  border: 1.5px solid black;
+  border: 1.5px solid rgb(69, 28, 82);
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
 }
 ._contact_c {
   width: 25rem;
   text-align: center;
+  color: rgb(69, 28, 82);
 
   text-decoration: none;
   // padding: .2rem;
-  border: 1.5px solid black;
+  border: 1.5px solid rgb(69, 28, 82);
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
 }
@@ -81,6 +88,8 @@
   text-decoration: none;
   // padding: 0.5rem;
   // border: 1.5px solid black;
+  color: rgb(69, 28, 82);
+
   border-radius: 15px;
   // margin: 0.5rem 0.5rem;
 }
@@ -116,12 +125,13 @@
 
 .whenClicked {
   color: white !important;
-  background-color: rgb(42, 24, 59);
+  background-color: rgb(69, 28, 82);
   transition-duration: 0.75s;
   // transition: ease-out;
 }
 .whenOutOfClick {
   background-color: rgb(255, 255, 255);
+  transition-duration: 0.5s;
 }
 
 @media screen and (max-width: 800px) {
@@ -134,22 +144,19 @@
   }
 }
 
-@media (max-width:990px) and (min-width:766px) {
+@media (max-width: 990px) and (min-width: 766px) {
   .smallsize {
     margin-top: 1rem;
     max-height: 25rem;
     max-width: 16rem;
-   background-color: rgb(99, 20, 173);  }
-}​
-
-
-.somemedia {
+  }
+}
+​ .somemedia {
   text-align: center;
 }
 
 .icon_linkedin {
   color: rgb(81, 64, 156);
-
 }
 // SVG
 
@@ -161,7 +168,14 @@
   color: rgb(63, 34, 97);
 }
 
-.icon_instagram{
+.icon_instagram {
   color: rgb(90, 43, 16);
+}
 
+.footer {
+  margin-top: auto;
+}
+
+.footr_div {
+  padding: 1rem;
 }
