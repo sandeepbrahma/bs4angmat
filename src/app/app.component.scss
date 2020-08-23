@@ -8,7 +8,8 @@
 
 // HEADER
 ._nav {
-  border-bottom: 2px solid rgb(69, 28, 82);
+  border-bottom: 1px solid #424242;
+
 }
 
 ._links {
@@ -19,7 +20,7 @@
   text-align: center;
   text-decoration: none;
   padding: 0.5rem;
-  border: 1.5px solid rgb(69, 28, 82);
+  border: 1px solid #2e2d2d;
   border-radius: 30px;
   color: rgb(69, 28, 82);
   // margin: 0.5rem 0.5rem;
@@ -30,7 +31,7 @@
   text-align: center;
   text-decoration: none;
   padding: 0.5rem;
-  border: 1.5px solid rgb(69, 28, 82);
+  border: 1px solid #2e2d2d;
   color: rgb(69, 28, 82);
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
@@ -42,7 +43,7 @@
 
   text-decoration: none;
   // padding: .2rem;
-  border: 1.5px solid rgb(69, 28, 82);
+  border: 1px solid #2e2d2d;
   color: rgb(69, 28, 82);
 
   border-radius: 30px;
@@ -55,7 +56,7 @@
 
   text-decoration: none;
   // padding: .2rem;
-  border: 1.5px solid rgb(69, 28, 82);
+  border: 1px solid #2e2d2d;
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
 }
@@ -67,7 +68,7 @@
 
   text-decoration: none;
   // padding: .2rem;
-  border: 1.5px solid rgb(69, 28, 82);
+  border: 1px solid #2e2d2d;
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
 }
@@ -78,7 +79,7 @@
 
   text-decoration: none;
   // padding: .2rem;
-  border: 1.5px solid rgb(69, 28, 82);
+  border: 1px solid #2e2d2d;
   border-radius: 30px;
   // margin: 0.5rem 0.5rem;
 }
@@ -130,7 +131,7 @@
 
 .whenClicked {
   color: white !important;
-  background-color: rgb(69, 28, 82);
+  background-color: #424242;
   transition-duration: 0.75s;
   // transition: ease-out;
 }
