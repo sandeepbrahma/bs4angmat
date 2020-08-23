@@ -7,6 +7,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Router, NavigationStart, NavigationEnd } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 
 
@@ -40,7 +41,9 @@ export class AppComponent implements OnInit {
 
 
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private titleService: Title) { 
+    titleService.setTitle("sbrahma");
+  }
 
   @HostBinding('class')
   get themeMode() {
