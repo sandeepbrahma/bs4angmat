@@ -1,5 +1,8 @@
-<body class="container d-flex flex-column min-vh-100">
+<div class="container d-flex flex-column min-vh-100 tesla">
+
+
   <div class="_nav row">
+
     <nav class="navbar navbar-expand-sm">
 
       <div class="row">
@@ -59,6 +62,7 @@
 
   </div>
 
+  <mat-slide-toggle aria-label="Close" class="dark_theme" [(ngModel)]="isDark">Mode!</mat-slide-toggle>
 
   <div class="_main row">
 
@@ -364,6 +368,8 @@
           </a>
         </svg> -->
       <!-- </div> -->
+      <!-- (change)="onDarkModeToggle($event)" -->
+
 
 
       <a id="nodesvg" style="margin-left: 5rem" [routerLink]="['/profile']">
@@ -424,8 +430,7 @@
             <path
               d="m 711.01659,215.19543 17.79333,43.799 10.94972,30.11177 28.74306,-42.4302 c 0,0 -17.79333,-17.79339 -17.79333,-41.06153 z"
               transform="translate(-279.56519,-114)" fill="#a0616a" id="path131" />
-            <polygon points="369.859,607.62 393.127,626.782 402.709,566.559 378.072,566.559 " fill="#a0616a"
-              id="polygon133" style="fill:#ffffff" />
+
             <ellipse cx="451.29779" cy="92.298767" fill="#a0616a" id="circle137" rx="31.912031" ry="31.48049" />
             <path
               d="m 801.72063,316.0112 c 9.36209,0 -2.98284,124.81016 1.73743,124.81016 8.21229,0 -43.90508,0.78773 -52.11738,-6.05587 -8.2123,-6.8436 -33.21792,-6.10615 -33.21792,-6.10615 0,0 -16.89483,15.44228 -17.68476,2.84806 l -6.21469,-119.02696 -5.10618,-54.85481 c 0,0 17.79334,-5.47487 26.00563,2.73743 l 2.50475,-2.97017 18.14922,2.06682 -0.1232,-0.46531 0.1232,0.46531 3.98291,14.59058 c 0,0 5.83076,-19.81908 9.95061,-23.95254 0.28114,-0.29592 -0.37751,0.15523 0,0 4.10618,-1.36871 12.32236,-11.68086 12.32236,-11.68086 l 16.24273,8.30009 1.17709,1.3277 30.21792,6.581 z"
@@ -839,6 +844,7 @@
 
         </svg>
       </a>
+
     </div>
 
     <!-- Router Outlet starts-->
@@ -850,7 +856,7 @@
 
   <footer class="footer">
     <div class="row footr_div">
-      <div class="col-md-6 sometext">
+      <div class="col-md-6 sometext dark_theme">
         <p style="margin-top: 1rem">Copyright &copy; 2020 sbrahma.com</p>
       </div>
 
@@ -858,21 +864,21 @@
         <ul style="display: flex ; justify-content: space-between;padding: 0px">
           <li class="nav-item" style="list-style: none;">
             <a href="https://www.facebook.com/" class="nav-link">
-              <fa-icon [icon]="faFacebook" class="d-sm-block icon_faCofee"></fa-icon>
+              <fa-icon [icon]="faFacebook" class="d-sm-block icon_faCofee dark_theme"></fa-icon>
             </a>
           </li>
           <li class="nav-item" style="list-style: none;">
             <a href="https://www.linkedin.com/feed/" class="nav-link">
-              <fa-icon [icon]="faLinkedin" class=" d-sm-block "></fa-icon>
+              <fa-icon [icon]="faLinkedin" class=" d-sm-block icon_faCofee dark_theme"></fa-icon>
             </a>
           </li>
           <li class="nav-item" style="list-style: none;">
             <a href="https://www.instagram.com/" class="nav-link">
-              <fa-icon [icon]="faInstagram" class="d-sm-block icon_instagram"></fa-icon>
+              <fa-icon [icon]="faInstagram" class="d-sm-block icon_instagram dark_theme"></fa-icon>
             </a>
           </li>
         </ul>
       </div>
     </div>
   </footer>
-</body>
+</div>

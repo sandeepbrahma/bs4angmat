@@ -19,6 +19,7 @@ $bs4angmat-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $bs4angmat-theme: mat-light-theme($bs4angmat-primary, $bs4angmat-accent, $bs4angmat-warn);
+$bs4angmat-theme-dark: mat-dark-theme($bs4angmat-primary, $bs4angmat-accent, $bs4angmat-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -34,8 +35,7 @@ html,
 body {
   margin: 0;
   padding: 1px;
-  // background-color: rgb(32, 18, 46);
-  height: 100%;
+  min-height: 100%;
   // box-sizing: border-box;
 
   //   font-family: 'Dancing Script', cursive;
@@ -45,3 +45,24 @@ body {
 // font-family: 'Dancing Script', cursive;
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Sriracha', cursive;
+.icon_faCofee {
+  color: rgb(63, 34, 97);
+}
+
+.icon_instagram {
+  color: rgb(90, 43, 16);
+}
+
+.theme-dark {
+  .tesla {
+    background-color: rgb(88, 88, 90);
+  }
+  .dark_theme {
+    color: whitesmoke;
+  }
+  @include angular-material-theme($bs4angmat-theme-dark);
+}
+
+.theme-light {
+  @include angular-material-theme($bs4angmat-theme);
+}

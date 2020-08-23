@@ -7,15 +7,16 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { MatInputModule } from '@angular/material/input';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 
 
 
 @NgModule({
     imports: [MatCardModule, MatDividerModule, MatProgressBarModule, MatButtonModule, MatRadioModule, MatFormFieldModule,
-        MatInputModule],
+        MatInputModule, MatSlideToggleModule],
     exports: [MatCardModule, MatDividerModule, MatProgressBarModule, MatButtonModule, MatRadioModule, MatFormFieldModule,
-        MatInputModule],
+        MatInputModule, MatSlideToggleModule],
 
 })
 export class MaterialModule { }

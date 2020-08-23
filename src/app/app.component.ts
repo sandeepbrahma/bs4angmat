@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
@@ -15,6 +15,8 @@ import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 import { gsap, Power2, Elastic } from 'gsap/all';
+import { EventEmitter } from 'protractor';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-root',
@@ -33,7 +35,18 @@ export class AppComponent implements OnInit {
   public isMenuCollapsed = true;
   isCollapsed = true;
   public href: string = "";
+  public isDark = false;
+  // readonly darkModeToggle = new EventEmitter <boolean>();
+
+
+
   constructor(private router: Router) { }
+
+  @HostBinding('class')
+  get themeMode() {
+    return this.isDark ? 'theme-dark' : 'theme-light';
+  }
+
 
   ngOnInit(): void {
     // ?need to understand//
@@ -91,6 +104,11 @@ export class AppComponent implements OnInit {
     }
   }
 
+  
+
+  // onDarkModeToggle({checked}: MatSlideToggleChange) {
+  //   this.darkModeToggle.emit(checked);
+  // }
 
   clickEventHome() {
     this.statusHome = true;
