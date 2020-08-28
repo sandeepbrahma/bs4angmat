@@ -55,9 +55,12 @@ body {
 
 .theme-dark {
   .tesla {
-    background-color: #2e2d2d;
+    background-color: #343349f8;
   }
   .dark_theme {
+    color: whitesmoke;
+  }
+  input,textarea {
     color: whitesmoke;
   }
   @include angular-material-theme($bs4angmat-theme-dark);
