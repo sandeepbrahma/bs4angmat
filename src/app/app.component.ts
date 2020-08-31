@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, ElementRef } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
@@ -10,14 +10,8 @@ import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 
-
-
-
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-
 import { gsap, Power2, Elastic } from 'gsap/all';
-import { EventEmitter } from 'protractor';
-import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+
 
 @Component({
   selector: 'app-root',
@@ -41,7 +35,7 @@ export class AppComponent implements OnInit {
 
 
 
-  constructor(private router: Router, private titleService: Title) { 
+  constructor(private elRef: ElementRef, private router: Router, private titleService: Title) {
     titleService.setTitle("sbrahma");
   }
 
@@ -80,11 +74,6 @@ export class AppComponent implements OnInit {
       console.log(error);
     }
 
-    // .from("#para1", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
-    // .from("#para2", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
-    // .from("#para3", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
-    // .from("#para4", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
-
 
   }
   routerChangeMethod(url) {
@@ -107,7 +96,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  
+
 
   // onDarkModeToggle({checked}: MatSlideToggleChange) {
   //   this.darkModeToggle.emit(checked);
@@ -146,6 +135,8 @@ export class AppComponent implements OnInit {
     gsap.timeline()
       .from(tech, { duration: .5, ease: "bounce", opacity: 0, scale: 0 })
   }
+
+
 
 }
 
