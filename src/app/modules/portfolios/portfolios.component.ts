@@ -8,9 +8,9 @@ import { trigger, transition, style, animate, animateChild, query, stagger } fro
 
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss'],
+  selector: 'app-portfolios',
+  templateUrl: './portfolios.component.html',
+  styleUrls: ['./portfolios.component.scss'],
   animations: [
     trigger('list', [
       transition(':enter', [
@@ -27,7 +27,7 @@ import { trigger, transition, style, animate, animateChild, query, stagger } fro
     ])
   ]
 })
-export class ProfileComponent implements OnInit {
+export class PortfoliosComponent implements OnInit {
   faAngular = faAngular;
   faReact = faReact;
   profiles: Profile[];

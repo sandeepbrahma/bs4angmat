@@ -21,12 +21,12 @@
                 </li>
 
                 <li class="navbar-item mt-3">
-                  <a class="_profile_c nav-link" [routerLink]="['/profile']" (click)='clickEventProfile()'
+                  <a class="_profile_c nav-link" [routerLink]="['/portfolios']" (click)='clickEventProfile()'
                     [ngClass]="statusProfile ? 'whenClicked' : 'whenOutOfClick' ">Portfolios</a>
                 </li>
 
                 <li class="navbar-item mt-3">
-                  <a class="_contact_c nav-link" [routerLink]="['/contact']" (click)='clickEventContact()'
+                  <a class="_contact_c nav-link" [routerLink]="['/contacts']" (click)='clickEventContact()'
                     [ngClass]="statusContact ? 'whenClicked' : 'whenOutOfClick' ">ContactMe</a>
                 </li>
               </ul>
@@ -47,14 +47,14 @@
             </li>
 
             <li class="navbar-item mx-4 ">
-              <a class="_profile nav-link" style="margin-left: 5rem" [routerLink]="['/profile']"
+              <a class="_profile nav-link" style="margin-left: 5rem" [routerLink]="['/portfolios']"
                 (click)='clickEventProfile()'
                 [ngClass]="statusProfile ? 'whenClicked' : 'whenOutOfClick' ">Portfolios</a>
             </li>
 
             <li class="navbar-item mx-4">
 
-              <a class="_contact nav-link" style="margin-left: 5rem" [routerLink]="['/contact']"
+              <a class="_contact nav-link" style="margin-left: 5rem" [routerLink]="['/contacts']"
                 (click)='clickEventContact()'
                 [ngClass]="statusContact ? 'whenClicked' : 'whenOutOfClick' ">ContactMe</a>
             </li>
