@@ -7,14 +7,14 @@
       <nav class="navbar navbar-expand-sm">
 
         <div class="row">
-          <div class="d-md-none" style="padding: .5rem">
+          <div class="d-md-none">
             <button type="button" class="btn btn-primary navbar-light bg-light" (click)="isCollapsed = !isCollapsed"
               aria-controls="collapseEvent"><span class="navbar-toggler-icon"></span>
             </button>
 
             <div id="collapseEvent" [isAnimated]="true" [collapse]="isCollapsed">
 
-              <ul class="navbar-nav mr-auto small_nav">
+              <ul class="navbar-nav m-auto small_nav">
                 <li class="navbar-item mt-3 ">
                   <a class="_home_c nav-link" [routerLink]="['/']" (click)='clickEventHome()'
                     [ngClass]="statusHome ? 'whenClicked' : 'whenOutOfClick' ">Home </a>

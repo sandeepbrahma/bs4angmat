@@ -2,6 +2,7 @@
   display: block;
 }
 
+
 ._router {
   flex: auto;
 }
@@ -27,7 +28,7 @@
 }
 
 ._home_c {
-  width: 25rem;
+  min-width: 22rem;
   text-align: center;
   text-decoration: none;
   padding: 0.5rem;
@@ -50,7 +51,7 @@
   // margin: 0.5rem 0.5rem;
 }
 ._profile_c {
-  width: 25rem;
+  min-width: 22rem;
   text-align: center;
   color: rgb(69, 28, 82);
 
@@ -73,7 +74,7 @@
   // margin: 0.5rem 0.5rem;
 }
 ._contact_c {
-  width: 25rem;
+  min-width: 22rem;
   text-align: center;
   color: rgb(69, 28, 82);
 
