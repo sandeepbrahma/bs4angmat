@@ -10,8 +10,14 @@ import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 
-import { gsap, Power2, Elastic } from 'gsap/all';
 
+
+
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+
+import { gsap, Power2, Elastic } from 'gsap/all';
+import { EventEmitter } from 'protractor';
+import { MatSlideToggleChange } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-root',
@@ -74,6 +80,11 @@ export class AppComponent implements OnInit {
       console.log(error);
     }
 
+    // .from("#para1", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
+    // .from("#para2", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
+    // .from("#para3", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
+    // .from("#para4", { opacity: 0, y: () => Math.random() * 400 - 200, stagger: 0.1, duration: .8, ease: "back" })
+
 
   }
   routerChangeMethod(url) {
@@ -135,8 +146,11 @@ export class AppComponent implements OnInit {
     gsap.timeline()
       .from(tech, { duration: .5, ease: "bounce", opacity: 0, scale: 0 })
   }
-
-
+  
+  ngAfterViewInit() {
+    let loader = this.elRef.nativeElement.querySelector('#loader');
+    loader.style.display = "none"; //hide loader
+  }
 
 }
 
