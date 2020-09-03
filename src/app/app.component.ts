@@ -71,11 +71,6 @@ export class AppComponent implements OnInit {
         .from("#g1489", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
         .from("#g1429", { duration: .5, stagger: 0.1, ease: "back", opacity: 0, scale: 0, y: 2 })
 
-
-
-
-
-
     } catch (error) {
       console.log(error);
     }
@@ -88,20 +83,25 @@ export class AppComponent implements OnInit {
 
   }
   routerChangeMethod(url) {
+    console.log("URL" + url)
     switch (url) {
       case "/": {
+        console.log("in /");
         this.clickEventHome();
         break;
       }
-      case "/profile": {
+      case "/portfolios": {
+        console.log("in /profile");
         this.clickEventProfile();
         break;
       }
-      case "/contact": {
+      case "/contacts": {
+        console.log("in /contact");
         this.clickEventContact();
         break;
       }
       default: {
+        console.log("defaulting");
         break;
       }
     }
@@ -146,11 +146,10 @@ export class AppComponent implements OnInit {
     gsap.timeline()
       .from(tech, { duration: .5, ease: "bounce", opacity: 0, scale: 0 })
   }
-  
-  ngAfterViewInit() {
-    let loader = this.elRef.nativeElement.querySelector('#loader');
-    loader.style.display = "none"; //hide loader
-  }
+
+  // ngAfterViewInit() {
+  //   let loader = this.elRef.nativeElement.querySelector('#loader');
+  //   loader.style.display = "none"; //hide loader
+  // }
 
 }
-
